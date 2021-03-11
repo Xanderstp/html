@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+        <title>Профессия</title>
+    </head>
+    <body>
+        {% if list == "ol" %}
+            <ol>
+            {% for item in jobs%}
+            <li>{{item}}</li>
+            {% endfor %}
+            <ol>
+        {% else %}
+            {% if list == 'ul'%}
+                <ul>
+                {% for item in jobs%}
+                <li>{{item}}</li>
+                {% endfor %}
+                <ul>
+            {% else %}
+                <h2>Владос съел список</h2>
+            {% endif %}
+        {% endif %}
+    </body>
+</html>
