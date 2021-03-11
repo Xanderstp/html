@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+        <title>Профессия</title>
+    </head>
+    <body>
+        {% if prof == "врач" %}
+            <h2>Инженерные тренажеры</h2>
+            <img src = '/static/data/схема_1.jpg'>
+        {% else %}
+            <h2>Научные симуляторы</h2>
+            <img src = '/static/data/схема_2.jpg'>
+        {% endif %}
+    </body>
+</html>
